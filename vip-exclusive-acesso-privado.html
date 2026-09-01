@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Exclusive | Acesso Privado</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .serif { font-family: 'Playfair Display', serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gold-gradient { background: linear-gradient(135deg, #D4AF37 0%, #F9E4B7 50%, #B8860B 100%); }
+        .text-gold { background: linear-gradient(135deg, #D4AF37 0%, #F9E4B7 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .card-hover { transition: all 0.3s ease; }
+        .card-hover:hover { transform: translateY(-8px); border-color: #D4AF37; }
+        .animate-pulse-slow { animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: .7; } }
+    </style>
+</head>
+<body class="bg-[#0a0a0a] text-gray-200 selection:bg-yellow-500 selection:text-black">
+
+    <!-- Header / Nav -->
+    <nav class="fixed top-0 w-full z-50 glass py-4 px-6 flex justify-between items-center">
+        <div class="text-2xl font-extrabold tracking-tighter serif italic text-gold">VIP<span class="text-white">Exclusive</span></div>
+        <a href="#planos" class="gold-gradient text-black px-5 py-2 rounded-full font-bold text-sm hover:scale-105 transition-transform">ASSINAR AGORA</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.pexels.com/photos/17750015/pexels-photo-17750015.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+                 class="w-full h-full object-cover opacity-30 scale-110 blur-sm" alt="Background">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-transparent to-[#0a0a0a]"></div>
+        </div>
+
+        <div class="relative z-10 text-center px-6 max-w-4xl">
+            <span class="inline-block px-4 py-1 rounded-full border border-yellow-600/50 text-yellow-500 text-xs font-bold tracking-widest uppercase mb-6 animate-pulse-slow">Conteúdo Sem Censura</span>
+            <h1 class="text-5xl md:text-8xl font-extrabold serif italic leading-tight mb-6">
+                Onde a <span class="text-gold">fantasia</span> <br>se torna realidade.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-400 mb-10 max-w-2xl mx-auto font-light">
+                Acesso imediato ao meu lado mais íntimo. Fotos, vídeos e chats exclusivos que você não encontrará em nenhum outro lugar.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#planos" class="gold-gradient text-black px-10 py-4 rounded-full font-extrabold text-lg hover:shadow-[0_0_30px_rgba(212,175,55,0.4)] transition-all">QUERO ACESSO VIP</a>
+                <a href="#como-funciona" class="glass text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white/10 transition-all">SAIBA MAIS</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Gallery / Teaser -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold serif italic mb-4">Um vislumbre do <span class="text-gold">proibido</span></h2>
+            <p class="text-gray-500">Apenas 1% do que te espera lá dentro.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="relative group overflow-hidden rounded-3xl aspect-[3/4] card-hover">
+                <img src="https://images.pexels.com/photos/230590/pexels-photo-230590.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Teaser 1">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-8">
+                    <p class="text-white font-bold text-xl serif italic">Sessão Noir</p>
+                    <p class="text-gray-400 text-sm">Disponível no VIP</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl aspect-[3/4] card-hover">
+                <img src="https://images.pexels.com/photos/16166088/pexels-photo-16166088.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Teaser 2">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-8">
+                    <p class="text-white font-bold text-xl serif italic">Intimidade Pura</p>
+                    <p class="text-gray-400 text-sm">Disponível no VIP</p>
+                </div>
+            </div>
+            <div class="relative group overflow-hidden rounded-3xl aspect-[3/4] card-hover">
+                <img src="https://images.pexels.com/photos/5218987/pexels-photo-5218987.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" alt="Teaser 3">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-transparent to-transparent flex flex-col justify-end p-8">
+                    <p class="text-white font-bold text-xl serif italic">Toque de Seda</p>
+                    <p class="text-gray-400 text-sm">Disponível no VIP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="como-funciona" class="py-24 bg-[#0f0f0f] px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold serif italic mb-4">Como funciona o <span class="text-gold">Acesso</span></h2>
+                <p class="text-gray-500">Simples, rápido e totalmente discreto.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="text-center group">
+                    <div class="w-20 h-20 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 rotate-3 group-hover:rotate-0 transition-transform">
+                        <i data-lucide="credit-card" class="text-black w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">1. Escolha seu Plano</h3>
+                    <p class="text-gray-400 leading-relaxed">Selecione o pacote que melhor se adapta aos seus desejos na nossa seção de planos.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-20 h-20 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 -rotate-3 group-hover:rotate-0 transition-transform">
+                        <i data-lucide="zap" class="text-black w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">2. Pagamento via Pix</h3>
+                    <p class="text-gray-400 leading-relaxed">Pagamento instantâneo e seguro. Assim que confirmado, o processo de liberação começa.</p>
+                </div>
+                <div class="text-center group">
+                    <div class="w-20 h-20 gold-gradient rounded-2xl flex items-center justify-center mx-auto mb-6 rotate-3 group-hover:rotate-0 transition-transform">
+                        <i data-lucide="send" class="text-black w-10 h-10"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">3. Receba o Link</h3>
+                    <p class="text-gray-400 leading-relaxed">Você recebe o link de acesso exclusivo via WhatsApp ou Telegram em poucos minutos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing / Plans -->
+    <section id="planos" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold serif italic mb-4">Escolha sua <span class="text-gold">Experiência</span></h2>
+            <p class="text-gray-500">Acesso por 1 mês. Aproveite a oferta especial de lançamento.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Plan 1 -->
+            <div class="glass p-8 rounded-3xl flex flex-col card-hover relative overflow-hidden">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-2">Degustação</h3>
+                    <p class="text-gray-400 text-sm">Para quem quer conhecer.</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-extrabold">R$ 9,90</span>
+                    <span class="text-gray-500 text-sm">/1 mês</span>
+                </div>
+                <div class="inline-flex self-start mb-6 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold">50% DE DESCONTO</div>
+                <ul class="space-y-4 mb-10 flex-grow">
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> 50+ Fotos Exclusivas</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> 5 Vídeos Curtos</li>
+                    <li class="flex items-center gap-3 text-sm text-gray-600"><i data-lucide="x" class="text-gray-600 w-4 h-4"></i> Chat Direto</li>
+                </ul>
+                <button onclick="openModal('degustacao')" class="w-full py-4 rounded-xl border border-yellow-600/50 text-yellow-500 font-bold hover:bg-yellow-600 hover:text-black transition-all">ASSINAR</button>
+            </div>
+
+            <!-- Plan 2 (Featured) -->
+            <div class="relative p-1 rounded-3xl gold-gradient scale-105 z-10">
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-black text-gold text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest border border-yellow-600">Mais Vendido</div>
+                <div class="bg-[#0a0a0a] p-8 rounded-[calc(1.5rem-1px)] h-full flex flex-col">
+                    <div class="mb-8">
+                        <h3 class="text-2xl font-bold mb-2 text-gold">VIP Gold</h3>
+                        <p class="text-gray-400 text-sm">A experiência completa.</p>
+                    </div>
+                    <div class="mb-8">
+                        <span class="text-4xl font-extrabold">R$ 17,90</span>
+                        <span class="text-gray-500 text-sm">/1 mês</span>
+                    </div>
+                    <div class="inline-flex self-start mb-6 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold">50% DE DESCONTO</div>
+                    <ul class="space-y-4 mb-10 flex-grow">
+                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Acesso a TODO o acervo</li>
+                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Vídeos Longos e Sem Cortes</li>
+                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Chat Prioritário</li>
+                        <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Conteúdo Novo Semanal</li>
+                    </ul>
+                    <button onclick="openModal('vip_gold')" class="w-full py-4 rounded-xl gold-gradient text-black font-extrabold hover:scale-105 transition-all">ASSINAR AGORA</button>
+                </div>
+            </div>
+
+            <!-- Plan 3 -->
+            <div class="glass p-8 rounded-3xl flex flex-col card-hover relative overflow-hidden">
+                <div class="mb-8">
+                    <h3 class="text-2xl font-bold mb-2">VIP Premium</h3>
+                    <p class="text-gray-400 text-sm">O pacote mais completo.</p>
+                </div>
+                <div class="mb-8">
+                    <span class="text-4xl font-extrabold">R$ 25,00</span>
+                    <span class="text-gray-500 text-sm">/1 mês</span>
+                </div>
+                <div class="inline-flex self-start mb-6 px-3 py-1 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 text-xs font-bold">50% DE DESCONTO</div>
+                <ul class="space-y-4 mb-10 flex-grow">
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Acesso completo por 1 mês</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Lançamentos do período inclusos</li>
+                    <li class="flex items-center gap-3 text-sm"><i data-lucide="check" class="text-yellow-500 w-4 h-4"></i> Chamada de Vídeo (Sorteio)</li>
+                </ul>
+                <button onclick="openModal('vitalicio')" class="w-full py-4 rounded-xl border border-yellow-600/50 text-yellow-500 font-bold hover:bg-yellow-600 hover:text-black transition-all">ASSINAR</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-white/10 text-center px-6">
+        <div class="text-xl font-extrabold serif italic text-gold mb-4">VIP<span class="text-white">Exclusive</span></div>
+        <p class="text-gray-600 text-xs max-w-md mx-auto">
+            Conteúdo destinado exclusivamente a maiores de 18 anos. Ao assinar, você concorda com nossos termos de privacidade e discrição.
+        </p>
+        <div class="mt-8 text-gray-700 text-[10px] uppercase tracking-widest">
+            &copy; 2026 VIP Exclusive. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- Checkout Modal -->
+    <div id="modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 bg-black/90 backdrop-blur-md">
+        <div class="glass max-w-md w-full p-8 rounded-3xl relative animate-in fade-in zoom-in duration-300">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-500 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+            
+            <div class="text-center mb-8">
+                <h3 class="text-2xl font-bold serif italic mb-2">Finalizar Assinatura</h3>
+                <p id="modal-plan" class="text-yellow-500 font-semibold"></p>
+            </div>
+
+            <form id="checkout-form" class="space-y-4">
+                <label class="block text-sm text-gray-300">Nome completo
+                    <input id="payer-name" required minlength="3" autocomplete="name" class="mt-2 w-full bg-black/40 border border-white/10 p-3 rounded-xl text-white outline-none focus:border-yellow-500" placeholder="Seu nome">
+                </label>
+                <label class="block text-sm text-gray-300">CPF
+                    <input id="payer-cpf" required inputmode="numeric" autocomplete="off" maxlength="14" class="mt-2 w-full bg-black/40 border border-white/10 p-3 rounded-xl text-white outline-none focus:border-yellow-500" placeholder="000.000.000-00">
+                </label>
+                <label class="flex gap-3 text-xs text-gray-400 leading-relaxed cursor-pointer">
+                    <input id="age-confirmation" required type="checkbox" class="mt-0.5 accent-yellow-500"> Confirmo que sou maior de 18 anos e concordo em prosseguir.
+                </label>
+                <p id="checkout-error" role="alert" class="hidden text-sm text-red-400"></p>
+                <button id="generate-pix" type="submit" class="w-full py-4 rounded-xl gold-gradient text-black font-extrabold hover:scale-[1.02] transition-transform">GERAR PIX SEGURO</button>
+            </form>
+
+            <div id="pix-payment" class="hidden bg-white/5 p-6 rounded-2xl border border-white/10 text-center">
+                <p class="text-sm text-gray-400 mb-4">Escaneie o QR Code ou copie o Pix abaixo:</p>
+                <img id="qr-code" alt="QR Code Pix" class="bg-white p-3 rounded-xl w-44 h-44 object-contain mx-auto mb-4">
+                <button id="copy-pix" type="button" class="w-full bg-black/40 border border-white/10 text-xs p-3 rounded-lg text-gray-300 hover:border-yellow-600 transition-all">COPIAR CÓDIGO PIX</button>
+                <p id="payment-status" class="mt-4 text-xs text-gray-400">Aguardando confirmação do pagamento…</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Modal Logic
+        const modal = document.getElementById('modal');
+        const modalPlan = document.getElementById('modal-plan');
+        const checkoutForm = document.getElementById('checkout-form');
+        const pixPayment = document.getElementById('pix-payment');
+        const checkoutError = document.getElementById('checkout-error');
+        const generatePix = document.getElementById('generate-pix');
+        const paymentStatus = document.getElementById('payment-status');
+        const copyPix = document.getElementById('copy-pix');
+        const qrCode = document.getElementById('qr-code');
+        let selectedPlan = null;
+        let currentPixCode = '';
+        let statusTimer = null;
+
+        const plans = {
+            degustacao: { name: 'Degustação', price: '9,90' },
+            vip_gold: { name: 'VIP Gold', price: '17,90' },
+            vitalicio: { name: 'VIP Premium', price: '25,00' }
+        };
+
+        function openModal(planId) {
+            selectedPlan = planId;
+            const plan = plans[planId];
+            modalPlan.innerText = `${plan.name} — R$ ${plan.price}`;
+            checkoutForm.reset();
+            checkoutForm.classList.remove('hidden');
+            pixPayment.classList.add('hidden');
+            checkoutError.classList.add('hidden');
+            clearInterval(statusTimer);
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+            clearInterval(statusTimer);
+        }
+
+        document.getElementById('payer-cpf').addEventListener('input', (event) => {
+            const digits = event.target.value.replace(/\D/g, '').slice(0, 11);
+            event.target.value = digits.replace(/(\d{3})(\d)/, '$1.$2').replace(/(\d{3})(\d)/, '$1.$2').replace(/(\d{3})(\d{1,2})$/, '$1-$2');
+        });
+
+        checkoutForm.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            checkoutError.classList.add('hidden');
+            generatePix.disabled = true;
+            generatePix.textContent = 'GERANDO PIX…';
+            try {
+                const response = await fetch('/api/pix', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        planId: selectedPlan,
+                        name: document.getElementById('payer-name').value,
+                        cpf: document.getElementById('payer-cpf').value
+                    })
+                });
+                const payment = await response.json();
+                if (!response.ok || !payment.copyPaste || !payment.qrCode) throw new Error(payment.error || 'Não foi possível gerar o Pix.');
+                currentPixCode = payment.copyPaste;
+                qrCode.src = payment.qrCode;
+                checkoutForm.classList.add('hidden');
+                pixPayment.classList.remove('hidden');
+                checkPayment(payment.transactionId);
+                statusTimer = setInterval(() => checkPayment(payment.transactionId), 10000);
+            } catch (error) {
+                checkoutError.textContent = error.message;
+                checkoutError.classList.remove('hidden');
+            } finally {
+                generatePix.disabled = false;
+                generatePix.textContent = 'GERAR PIX SEGURO';
+            }
+        });
+
+        copyPix.addEventListener('click', async () => {
+            try {
+                await navigator.clipboard.writeText(currentPixCode);
+                copyPix.textContent = 'CÓDIGO COPIADO ✓';
+                setTimeout(() => copyPix.textContent = 'COPIAR CÓDIGO PIX', 2000);
+            } catch {
+                paymentStatus.textContent = 'Não foi possível copiar automaticamente. Selecione o código no seu banco pelo QR Code.';
+            }
+        });
+
+        async function checkPayment(transactionId) {
+            try {
+                const response = await fetch(`/api/pix/${encodeURIComponent(transactionId)}`);
+                const data = await response.json();
+                if (data.status === 'COMPLETO') {
+                    clearInterval(statusTimer);
+                    paymentStatus.textContent = 'Pagamento confirmado! Seu acesso será liberado em instantes.';
+                    paymentStatus.className = 'mt-4 text-sm text-green-400 font-bold';
+                } else if (data.status === 'FALHA' || data.status === 'CANCELADO') {
+                    clearInterval(statusTimer);
+                    paymentStatus.textContent = 'Este pagamento não foi aprovado. Gere um novo Pix para tentar novamente.';
+                    paymentStatus.className = 'mt-4 text-xs text-red-400';
+                }
+            } catch { /* mantém a cobrança aberta e tenta novamente no próximo ciclo */ }
+        }
+
+        // Close modal on overlay click
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) closeModal();
+        });
+    </script>
+</body>
+</html>
+
